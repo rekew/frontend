@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+    /*flex-direction: column;* -> if we want main axis to be vertical or simply making flex vertical*/
+    /*
+        justify-content: space-between; -> spacees the items evenly between, but the edges are closed
+        justify-content: space-evenly -> space the items and the edges evenly
+        justify-content: space-around -> space the edges evenly and items evenly, but the spacing of items and edges are not related
+    */
+    align-items: baseline ;/* this aligns items at the level of baseline. for instance : if the item1 font is 1.5rem, then other 2 items are leveled together, but item1 is seperate */
+    /*
+        flex-wrap: wrap;
+        align-content: center;  works froup grop of elements. simply for flex wrap property 
+    */
+}
+
+.item-1{
+    /*
+        flex-grow: 1;
+        flex-shrink: 5; 
+        flex-basis : 300px; 
+    */
+    flex : 1 5 300px;
+}
